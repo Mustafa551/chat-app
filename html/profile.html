@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars inp" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <div class="sidebar">
+        <header>Chat App</header>
+        <ul>
+            <li><a href="#"><i class="fas fa-user "></i>Profile</a></li>
+            <li><a href="../html/chat.html"><i class="fas fa-comment"></i>Chat</a></li>
+            <li><a href="#" onclick="logout()"><i class="fa- fa-arrow-right-from-bracket"></i>Logout</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="header">
+            <div class="logout">
+
+                <button>Logout</button>
+            </div>
+        </div>
+        <div class="main" id="main">
+            <div class="details">
+                <div class="pic">
+                    <img src="../images/test.png" alt="">
+                </div>
+                <div class="innerdetails" id="innerdetails">
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="../java/profile.js" type="module"></script>
+</body>
+
+</html>
