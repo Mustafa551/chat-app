@@ -31,7 +31,8 @@ let signupBtn = document.getElementById('signupBtn')
 let errors = document.getElementById('hiddenmsg')
 let emailRegx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-const register = () => {
+signupBtn.addEventListener("click", () => {
+    event.preventDefault()
     if (username.value.trim() === "") {
         errors.innerHTML = "Please enter username"
         setTimeout(function () {
@@ -100,6 +101,6 @@ const register = () => {
     }
 
     
-}
+})
 
-signupBtn.addEventListener("click", register )
+
